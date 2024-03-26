@@ -1,0 +1,236 @@
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+  .hero {
+    gap: 4.8rem;
+  }
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+  .testimonial-text {
+    font-size: 1.4rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 50fr 50fr;
+    gap: 3rem;
+  }
+  .testimonials {
+    margin-top: 3rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 7rem;
+  }
+  .hero-text-box {
+    text-align: center;
+    padding: 8rem auto 8rem;
+    justify-self: flex-end !important;
+    align-items: start;
+  }
+  .hero-img {
+    width: 60%;
+  }
+  html {
+    font-size: 50%;
+  }
+
+  .logos img {
+    height: 2.1rem;
+  }
+  .logos {
+    gap: 3rem;
+  }
+  .section-footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.3rem;
+    column-gap: 0.3rem;
+  }
+  .nav-card {
+    grid-column: span 2;
+    grid-row: 1;
+  }
+  .pricing-card {
+    width: 90%;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* navbar responsive!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  .nav-toggler {
+    display: flex;
+  }
+  .header .nav {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: var(--color-1);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header .nav ul li {
+    display: block;
+    margin: 0;
+  }
+  .header #nav-check:checked ~ .nav {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header #nav-check:focus ~ .nav-toggler {
+
+  }
+  .header #nav-check:checked ~ .nav-toggler span {
+    background-color: transparent;
+  }
+  .header #nav-check:checked ~ .nav-toggler span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .header #nav-check:checked ~ .nav-toggler span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  nav{
+    visibility: hidden;
+    opacity: 0.7; /* Set initial opacity to 0 */
+    transition: opacity 0.3s ease, display 1s ease; /* Add opacity transition */
+    background-color: rgb(255, 255, 255) !important;
+    filter: blur(0.5);
+    
+    
+  }
+  .main-nav-list{
+    display:inline-block;
+    padding-bottom:2rem;
+  }
+
+  /* navbar code ends!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+}
+
+@media (max-width: 768px) {
+  .heading-secondary {
+    margin-bottom: 1rem;
+  }
+  .pricing-card {
+    width: 100%;
+  }
+  .pricing-container {
+    gap: 3rem;
+  }
+  .section-pricing {
+    padding: 8rem 4rem;
+  }
+  .testimonials-container {
+    padding: 4rem;
+  }
+  .header{
+    padding: 0 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+  .hero-text-box {
+    text-align: left;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+  .benefit-container {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-container {
+    grid-template-columns: 1fr;
+  }
+  .section-pricing {
+    padding: 8rem 1rem;
+  }
+  .section-meals {
+    padding: 3rem;
+  }
+  .grid-how-it-works {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .step-img-box {
+    transform: translateY(2.4rem);
+  }
+
+  .logos {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .logos img {
+    max-height: 1.5rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-text {
+    font-size: 1.7rem;
+  }
+}
+
+
+/* ******************************************************** */
+/* code for toggle navbar */
